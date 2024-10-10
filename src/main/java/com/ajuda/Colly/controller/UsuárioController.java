@@ -35,7 +35,7 @@ public class UsuárioController {
 	}
 	
 	@PostMapping("/criar")
-	public ResponseEntity<UsuarioResponse> criarUsuario(@PathVariable Long id, @RequestBody CadastrarUsuarioRequest dados) {
+	public ResponseEntity<UsuarioResponse> criarUsuario(@RequestBody CadastrarUsuarioRequest dados) {
 		
 		var response = usuarioService.cadastrarUsuario(dados);
 		
